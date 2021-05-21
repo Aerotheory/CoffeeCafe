@@ -27,7 +27,7 @@ h1 {
 
 .btn {
   display: inline-block;
-  background: red;
+  background: rgb(0, 131, 50);
   color: #fff;
   padding: 10px 20px;
   cursor: pointer;

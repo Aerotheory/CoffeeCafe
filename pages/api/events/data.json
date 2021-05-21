@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Cafe 1",
+      "slug": "cafe-1",
+      "decription": "this is a test cafe 1."
+    },
+    {
+      "id": "2",
+      "name": "Cafe 2",
+      "slug": "cafe-2",
+      "decription": "this is a test cafe 2."
+    },
+    {
+      "id": "3",
+      "name": "Cafe 3",
+      "slug": "cafe-3",
+      "decription": "this is a test cafe 3."
+    },
+    {
+      "id": "4",
+      "name": "Cafe 4",
+      "slug": "cafe-4",
+      "decription": "this is a test cafe 4."
+    },
+    {
+      "id": "5",
+      "name": "Cafe 5",
+      "slug": "cafe-5",
+      "decription": "this is a test cafe 5."
+    }
+  ]
+}
