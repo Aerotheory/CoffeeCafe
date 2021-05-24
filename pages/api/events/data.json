@@ -4,31 +4,61 @@
       "id": "1",
       "name": "Cafe 1",
       "slug": "cafe-1",
-      "decription": "this is a test cafe 1."
+      "venue": "venue-1",
+      "address": "address-1",
+      "performer": "performer-1",
+      "date": "date-1",
+      "time": "time-1",
+      "description": "this is a test cafe 1.",
+      "image": "/images/sample/toa02.jpg"
     },
     {
       "id": "2",
       "name": "Cafe 2",
       "slug": "cafe-2",
-      "decription": "this is a test cafe 2."
+      "venue": "venue-2",
+      "address": "address-2",
+      "performer": "performer-2",
+      "date": "date-2",
+      "time": "time-2",
+      "description": "this is a test cafe 2.",
+      "image": "/images/sample/lizzie.jpg"
     },
     {
       "id": "3",
       "name": "Cafe 3",
       "slug": "cafe-3",
-      "decription": "this is a test cafe 3."
+      "venue": "venue-3",
+      "address": "address-3",
+      "performer": "performer-3",
+      "date": "date-3",
+      "time": "time-3",
+      "description": "this is a test cafe 3.",
+      "image": "/images/sample/teo01.jpg"
     },
     {
       "id": "4",
       "name": "Cafe 4",
       "slug": "cafe-4",
-      "decription": "this is a test cafe 4."
+      "venue": "venue-4",
+      "address": "address-4",
+      "performer": "performer-4",
+      "date": "date-4",
+      "time": "time-4",
+      "description": "this is a test cafe 4.",
+      "image": "/images/sample/vladimir.jpg"
     },
     {
       "id": "5",
       "name": "Cafe 5",
       "slug": "cafe-5",
-      "decription": "this is a test cafe 5."
+      "venue": "venue-5",
+      "address": "address-5",
+      "performer": "performer-5",
+      "date": "date-5",
+      "time": "time-5",
+      "description": "this is a test cafe 5.",
+      "image": "/images/sample/kevin.jpg"
     }
   ]
 }

@@ -1,8 +1,33 @@
 import Layout from "@/components/Layout";
-export default function EventsPage() {
+import EventItem from "@/components/EventItem";
+import { API_URL } from "@/config/index";
+import Link from "next/link";
+
+export default function EventsPage({ events }) {
   return (
-    <Layout title="Events Page">
-      <h1>Events Page</h1>
+    <Layout>
+      <h1>Coffee Shops</h1>
+      {events.length === 0 && <h3>No Coffee Cafes to show.</h3>}
+
+      {events.map((evt) => (
+        <EventItem key={evt.id} evt={evt} />
+      ))}
+
+      {events.length === 0 && (
+        <Link href="/events">
+          <a className="btn-secondary">View All Cafes</a>
+        </Link>
+      )}
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch(`${API_URL}/api/events`);
+  const events = await res.json();
+
+  return {
+    props: { events },
+    revalidate: 1,
+  };
 }

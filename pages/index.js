@@ -1,7 +1,7 @@
+import Link from "next/link";
 import Layout from "@/components/Layout";
 import EventItem from "@/components/EventItem";
 import { API_URL } from "@/config/index";
-import Link from "next/link";
 
 export default function HomePage({ events }) {
   return (
@@ -27,7 +27,7 @@ export async function getStaticProps() {
   const events = await res.json();
 
   return {
-    props: { events },
+    props: { events: events.slice(0, 3) },
     revalidate: 1,
   };
 }
