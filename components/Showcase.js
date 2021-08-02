@@ -1,4 +1,4 @@
-import styles from "@/styles/showcase.module.css";
+import styles from '@/styles/Showcase.module.css'
 
 export default function Showcase() {
   return (
@@ -6,5 +6,5 @@ export default function Showcase() {
       <h1>Coffee Card</h1>
       <h2>Find a place to use your rewards card.</h2>
     </div>
-  );
+  )
 }
