@@ -10,14 +10,12 @@ export default function Layout({ title, keywords, description, children }) {
   return (
     <div>
       <Head>
-        <title>
-          {title}
-          <meta name='description' content={description} />
-          <meta name='keywords' content={keywords} />
-        </title>
+        <title>{title}</title>
+        <meta name='description' content={description} />
+        <meta name='keywords' content={keywords} />
       </Head>
-      {router.pathname === '/' && <Showcase />}
       <Header />
+      {router.pathname === '/' && <Showcase />}
       <div className={styles.container}>{children}</div>
       <Footer />
     </div>

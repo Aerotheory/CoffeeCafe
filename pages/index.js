@@ -1,4 +1,4 @@
-// import Link from 'next/link'
+import Link from 'next/link'
 import Layout from '@/components/Layout'
 import EventItem from '@/components/EventItem'
 import { API_URL } from '@/config/index'
@@ -6,18 +6,18 @@ import { API_URL } from '@/config/index'
 export default function HomePage({ events }) {
   return (
     <Layout>
-      <h1>Coffee Shops</h1>
+      <h1>Coffee Cafes</h1>
       {events.length === 0 && <h3>No Coffee Cafes to show.</h3>}
 
       {events.map((evt) => (
         <EventItem key={evt.id} evt={evt} />
       ))}
 
-      {/* {events.length === 0 && (
+      {events.length === 0 && (
         <Link href='/events'>
           <a className='btn-secondary'>View All Cafes</a>
         </Link>
-      )} */}
+      )}
     </Layout>
   )
 }
