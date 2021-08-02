@@ -21,12 +21,9 @@ export default function EventMap({ evt }) {
     setLng(lng)
     setViewport({ ...viewport, latitude: lat, longitude: lng })
     setLoading(false)
-    // console.log('useEffect: lat', lat, 'lng', lng)
   }, [])
 
   if (loading) return false
-
-  // console.log('Viewport', viewport)
 
   return (
     <ReactMapGl
