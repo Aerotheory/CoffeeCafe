@@ -13,11 +13,6 @@ export default function EventsPage({ events, page, total }) {
         <EventItem key={evt.id} evt={evt} />
       ))}
 
-      {/* {events.length === 0 && (
-        <Link href="/events">
-          <a className="btn-secondary">View All Cafes</a>
-        </Link>
-      )} */}
       <Pagination page={page} total={total} />
     </Layout>
   )

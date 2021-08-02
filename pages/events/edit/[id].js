@@ -76,7 +76,7 @@ export default function EditEventPage({ evt, token }) {
     setImagePreview(data.image.formats.thumbnail.url)
     setShowModal(false)
   }
-  console.log('[id] evt', evt)
+  // console.log('[id] evt', evt)
 
   return (
     <Layout title='Add New Event'>
