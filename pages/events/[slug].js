@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import Layout from '@/components/Layout'
-// import EventMap from '@/components/EventMap'
+import EventMap from '@/components/EventMap'
 import { API_URL } from '@/config/index'
 import styles from '@/styles/Event.module.css'
 import { useRouter } from 'next/router'
@@ -16,7 +16,7 @@ export default function EventPage({ evt }) {
     <Layout>
       <div className={styles.event}>
         <span>
-          {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}
+          {/* {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time} */}
         </span>
         <h1>{evt.name}</h1>
         <ToastContainer />
@@ -30,14 +30,19 @@ export default function EventPage({ evt }) {
           </div>
         )}
 
-        <h3>Performers:</h3>
+        <h3>Reward Points</h3>
         <p>{evt.performers}</p>
-        <h3>Description:</h3>
+        <h3>Description</h3>
         <p>{evt.description}</p>
-        <h3>Venue: {evt.venue}</h3>
+        <h3>Cafe Name</h3>
+        <p>{evt.venue}</p>
+        <h3>Address</h3>
         <p>{evt.address}</p>
+        {/* <h3>Coordinates</h3>
+        <p>Latitude: {evt.latitude}</p>
+        <p>Longitude: {evt.longitude}</p> */}
 
-        {/* <EventMap evt={evt} /> */}
+        <EventMap evt={evt} />
 
         <Link href='/events'>
           <a className={styles.back}>{'<'} Go Back</a>

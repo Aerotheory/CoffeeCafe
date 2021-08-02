@@ -19,6 +19,8 @@ export default function EditEventPage({ evt, token }) {
     performers: evt.performers,
     venue: evt.venue,
     address: evt.address,
+    latitude: evt.latitude,
+    longitude: evt.longitude,
     date: evt.date,
     time: evt.time,
     description: evt.description,
@@ -74,6 +76,7 @@ export default function EditEventPage({ evt, token }) {
     setImagePreview(data.image.formats.thumbnail.url)
     setShowModal(false)
   }
+  console.log('[id] evt', evt)
 
   return (
     <Layout title='Add New Event'>
@@ -83,7 +86,7 @@ export default function EditEventPage({ evt, token }) {
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.grid}>
           <div>
-            <label htmlFor='name'>Event Name</label>
+            <label htmlFor='name'>Cafe Name</label>
             <input
               type='text'
               id='name'
@@ -123,6 +126,26 @@ export default function EditEventPage({ evt, token }) {
             />
           </div>
           <div>
+            <label htmlFor='latitude'>Latitude</label>
+            <input
+              type='text'
+              name='latitude'
+              id='latitude'
+              value={values.latitude}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div>
+            <label htmlFor='longitude'>Longitude</label>
+            <input
+              type='text'
+              name='longitude'
+              id='longitude'
+              value={values.longitude}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div>
             <label htmlFor='date'>Date</label>
             <input
               type='date'
@@ -145,7 +168,7 @@ export default function EditEventPage({ evt, token }) {
         </div>
 
         <div>
-          <label htmlFor='description'>Event Description</label>
+          <label htmlFor='description'>Cafe Description</label>
           <textarea
             type='text'
             name='description'
@@ -158,7 +181,7 @@ export default function EditEventPage({ evt, token }) {
         <input type='submit' value='Update Event' className='btn' />
       </form>
 
-      <h2>Event Image</h2>
+      <h2>Cafe Image</h2>
       {imagePreview ? (
         <Image src={imagePreview} height={100} width={170} />
       ) : (

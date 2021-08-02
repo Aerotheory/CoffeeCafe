@@ -28,7 +28,7 @@ export default function DashboardPage({ events, token }) {
   }
 
   return (
-    <Layout title='User Dashboard'>
+    <Layout title='Dashboard'>
       <div className={styles.dash}>
         <h1>Dashboard</h1>
         <h3>My Cafes</h3>

@@ -14,6 +14,8 @@ export default function AddEventPage({ token }) {
     performers: '',
     venue: '',
     address: '',
+    latitude: 0,
+    longitude: 0,
     date: '',
     time: '',
     description: '',
@@ -103,6 +105,26 @@ export default function AddEventPage({ token }) {
               name='address'
               id='address'
               value={values.address}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div>
+            <label htmlFor='latitude'>Latitude</label>
+            <input
+              type='text'
+              name='latitude'
+              id='latitude'
+              value={values.latitude}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div>
+            <label htmlFor='longitude'>longitude</label>
+            <input
+              type='text'
+              name='longitude'
+              id='longitude'
+              value={values.longitude}
               onChange={handleInputChange}
             />
           </div>

@@ -12,7 +12,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.logo}>
         <Link href='/'>
-          <a>Coffe Cafe</a>
+          <a>Coffee Cafe</a>
         </Link>
       </div>
 
